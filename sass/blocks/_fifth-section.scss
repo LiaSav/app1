@@ -1,0 +1,58 @@
+.fifth-section {
+  padding: 73px 50px 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../img/ellipse-5-sec-bg.png') right bottom no-repeat;
+
+  &__title {
+    margin-bottom: 76px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 148px;
+  }
+
+  &__image-wrapper {
+    max-width: 700px;
+  }
+
+  &__form-subtitle {
+    display: inline-block;
+    width: 430px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 32px;
+    color: $black-title;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__form-input {
+    padding: 19px 30px;
+    width: 430px;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #a3a3a3;
+
+    &::placeholder {
+      font-size: 16px;
+      color: #a3a3a3;
+    }
+  }
+
+  &__form-button {
+    width: 243px;
+    padding: 20px;
+    border: none;
+  }
+}

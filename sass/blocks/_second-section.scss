@@ -1,0 +1,60 @@
+.second-section {
+  padding: 188px 50px;
+  background:
+    url('../img/phone-question.png') left bottom no-repeat,
+    url('../img/ellipse-2-sec.png') right bottom no-repeat;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    @media (max-width: 1720.98px) {
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    max-width: 430px;
+
+    @media (max-width: 1720.98px) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__parag {
+    font-size: 18px;
+
+    &_first {
+      margin-bottom: 25px;
+    }
+
+    &_second {
+      margin-bottom: 53px;
+    }
+
+    &_bold {
+      margin-bottom: 53px;
+      font-weight: 700;
+      color: $black-text;
+    }
+  }
+
+  &__images {
+    max-height: 705px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
+
+    @media (max-width: 1720.98px) {
+      flex: 0 1 50%;
+    }
+  }
+}

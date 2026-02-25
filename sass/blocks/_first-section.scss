@@ -1,0 +1,65 @@
+.first-section {
+  padding: 130px 50px 0;
+  font-style: italic;
+  background:
+    url('../img/ellipse-1-sec-bg.png') right -80px top no-repeat,
+    url('../img/ellipse-1-sec-bg-left.png') left center no-repeat;
+
+  &__container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+
+    @media (max-width: 1720.98px) {
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+
+    @media (max-width: 1720.98px) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__logo-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    width: 306px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #515151 0%, #1d1d1d 100%);
+  }
+
+  &__logo-title {
+    color: $white-text;
+    text-align: right;
+  }
+
+  &__logo-icon {
+    position: absolute;
+    left: -14px;
+    top: -29px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    color: $black-subtitle;
+  }
+
+  &__parag {
+    margin-bottom: 55px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__image-wrapper {
+    max-width: 866px;
+
+    @media (max-width: 1720.98px) {
+      flex: 0 1 50%;
+    }
+  }
+}

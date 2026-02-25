@@ -1,0 +1,70 @@
+.third-section {
+  padding: 124px 50px 190px;
+  background: url('../img/business-icon-3-sec-bg.png') right top 99px no-repeat;
+
+  &__text {
+    max-width: 880px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 77px;
+  }
+
+  &__parag {
+    font-size: 20px;
+    line-height: 28px;
+
+    &_first {
+      margin-bottom: 25px;
+    }
+
+    &_fz16 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__slider {
+    min-height: 490px;
+  }
+
+  &__slider-wrapper {
+    justify-content: center;
+    align-items: stretch !important;
+    gap: 20px;
+  }
+
+  &__slide {
+    max-width: 390px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #dfdede;
+    background-color: $white-bg;
+  }
+
+  &__image-wrapper {
+    margin-bottom: 29px;
+    width: 100%;
+    max-height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 25px;
+    color: $black-title;
+
+    &:after {
+      content: '';
+      width: 170px;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      border-bottom: 4px dashed #ed769c;
+    }
+  }
+}

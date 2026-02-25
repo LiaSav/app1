@@ -1,0 +1,77 @@
+.fourth-section {
+  padding: 73px 50px 191px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    url('../img/big-rocket-4-sec-bg.png') right top 73px no-repeat,
+    url('../img/ellipse-4-sec-bg.png') left bottom no-repeat;
+
+  &__text {
+    max-width: 880px;
+    margin-bottom: 116px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 61px;
+  }
+
+  &__parag {
+    font-size: 20px;
+    line-height: 28px;
+
+    &_first {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__items-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+    padding: 47px 20px 45px;
+    max-width: 340px;
+    background-color: $white-bg;
+    border-radius: 20px;
+    border: 1px solid #dfdfdf;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 178px;
+    height: 178px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+  }
+
+  &__image {
+    max-width: 90px;
+    height: auto;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    position: relative;
+    color: #282828;
+    text-align: center;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-top: 20px;
+      width: 200px;
+      border-bottom: 4px dashed #ed769c;
+    }
+  }
+}
