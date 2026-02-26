@@ -1,12 +1,21 @@
 .fifth-section {
-  padding: 73px 50px 194px;
+  padding: 73px 50px 152px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url('../img/ellipse-5-sec-bg.png') right bottom no-repeat;
 
+  @media (max-width: 768.98px) {
+    padding: 31px 20px 58px;
+    background: none;
+  }
+
   &__title {
     margin-bottom: 76px;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 53px;
+    }
   }
 
   &__content-wrapper {
@@ -14,6 +23,14 @@
     justify-content: center;
     align-items: center;
     gap: 148px;
+
+    @media (max-width: 1320.98px) {
+      gap: 25px;
+    }
+
+    @media (max-width: 768.98px) {
+      flex-direction: column;
+    }
   }
 
   &__image-wrapper {
@@ -22,18 +39,42 @@
 
   &__form-subtitle {
     display: inline-block;
-    width: 430px;
     margin-bottom: 40px;
     font-size: 22px;
     font-weight: 800;
     line-height: 32px;
     color: $black-title;
     text-transform: uppercase;
+
+    @media (max-width: 768.98px) {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: 768.98px) {
+        display: inline-block;
+        margin-bottom: 25px;
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+      }
+    }
   }
 
   &__form {
     display: flex;
     gap: 16px;
+
+    @media (max-width: 1620.98px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 768.98px) {
+      gap: 40px;
+      align-items: center;
+    }
   }
 
   &__form-input {
@@ -44,6 +85,11 @@
     font-size: 16px;
     color: #a3a3a3;
 
+    @media (max-width: 768.98px) {
+      padding: 15px 30px;
+      width: 320px;
+    }
+
     &::placeholder {
       font-size: 16px;
       color: #a3a3a3;
@@ -52,7 +98,14 @@
 
   &__form-button {
     width: 243px;
-    padding: 20px;
     border: none;
+
+    @media (max-width: 1620.98px) {
+      width: 430px;
+    }
+
+    @media (max-width: 768.98px) {
+      width: 290px;
+    }
   }
 }

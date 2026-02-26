@@ -5,6 +5,17 @@
     url('../img/ellipse-1-sec-bg.png') right -80px top no-repeat,
     url('../img/ellipse-1-sec-bg-left.png') left center no-repeat;
 
+  @media (max-width: 1024.98px) {
+    padding: 100px 50px 0;
+  }
+
+  @media (max-width: 768.98px) {
+    padding: 35px 20px 85px;
+    font-style: normal;
+    background: url('../img/ellipse-1-sec-bg-mobile.png') center bottom -36px
+      no-repeat;
+  }
+
   &__container {
     display: flex;
     gap: 70px;
@@ -13,13 +24,26 @@
     @media (max-width: 1720.98px) {
       justify-content: center;
     }
+
+    @media (max-width: 1320.98px) {
+      gap: 25px;
+    }
+
+    @media (max-width: 768.98px) {
+      flex-direction: column;
+    }
   }
 
-  &__text {
+  &__text-wrapper {
     max-width: 450px;
 
     @media (max-width: 1720.98px) {
       flex: 0 1 50%;
+    }
+
+    @media (max-width: 768.98px) {
+      max-width: 100%;
+      flex: 0 1 100%;
     }
   }
 
@@ -31,6 +55,12 @@
     padding: 10px 50px;
     border-radius: 40px;
     background: linear-gradient(90deg, #515151 0%, #1d1d1d 100%);
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 20px;
+      width: 128px;
+      padding: 5px 20px;
+    }
   }
 
   &__logo-title {
@@ -42,17 +72,50 @@
     position: absolute;
     left: -14px;
     top: -29px;
+
+    @media (max-width: 768.98px) {
+      left: -5px;
+      top: -12px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 30px;
     color: $black-subtitle;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__parag {
     margin-bottom: 55px;
     font-size: 22px;
+    line-height: 32px;
     font-weight: 500;
+
+    @media (max-width: 768.98px) {
+      width: 85%;
+      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    @media (max-width: 768.98px) {
+      display: none;
+    }
+  }
+
+  &__button-mobile {
+    display: none;
+
+    @media (max-width: 768.98px) {
+      display: inline-block;
+      margin-top: -80px;
+    }
   }
 
   &__image-wrapper {
@@ -60,6 +123,11 @@
 
     @media (max-width: 1720.98px) {
       flex: 0 1 50%;
+    }
+
+    @media (max-width: 768.98px) {
+      max-width: 100%;
+      flex: 0 1 100%;
     }
   }
 }

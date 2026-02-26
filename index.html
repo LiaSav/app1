@@ -23,14 +23,20 @@
   <body class="body">
     <section class="first-section">
       <div class="first-section__container container">
-        <div class="first-section__text">
+        <div class="first-section__text-wrapper">
           <a class="first-section__logo-wrapper" href="index.html">
             <h1 class="first-section__logo-title">IQUIZ:</h1>
-            <img
-              class="first-section__logo-icon"
-              src="img/rocket-1-sec.png"
-              alt="Logo IQUIZ rocket"
-            />
+            <picture class="first-section__logo-picture">
+              <source
+                srcset="img/rocket-1-sec-mobile.png"
+                media="(max-width: 768.98px)"
+              />
+              <img
+                class="first-section__logo-icon"
+                src="img/rocket-1-sec.png"
+                alt="Logo IQUIZ rocket"
+              />
+            </picture>
           </a>
           <h2 class="first-section__subtitle">
             ДОПОМАГАЄМО ОТРИМАТИ НОВІ ЗАЯВКИ
@@ -44,18 +50,28 @@
           >
         </div>
         <div class="first-section__image-wrapper">
-          <img
-            class="first-section__image"
-            src="img/phone-time-money-1-sec-bg.png"
-            alt="Phone, time, money"
-          />
+          <picture class="first-section__picture">
+            <source
+              srcset="img/phone-time-money-1-sec-bg-mobile.png"
+              media="(max-width: 768.98px)"
+            />
+            <img
+              class="first-section__image"
+              src="img/phone-time-money-1-sec-bg.png"
+              alt="Phone, time, money"
+            />
+          </picture>
         </div>
+        <a href="#" class="first-section__button-mobile button"
+          >Дізнатись детальніше</a
+        >
       </div>
     </section>
 
     <section class="second-section">
+      <h3 class="second-section__title-mobile title">Як це працює</h3>
       <div class="second-section__container container">
-        <div class="second-section__text">
+        <div class="second-section__text-wrapper">
           <h3 class="second-section__title title">Як це працює</h3>
           <p class="second-section__parag second-section__parag_first">
             Квізи – це тести, вікторини та опитування, які можна використовувати
@@ -72,26 +88,56 @@
           </p>
         </div>
         <div class="second-section__images">
-          <img
-            class="second-section__image"
-            src="img/boy-laptop-2-sec.png"
-            alt="Boy with a laptop"
-          />
-          <img
-            class="second-section__image"
-            src="img/two-girls-2-sec.png"
-            alt="Two girls"
-          />
-          <img
-            class="second-section__image"
-            src="img/one-girl-2-sec.png"
-            alt="One girl"
-          />
+          <div
+            class="second-section__image-wrapper second-section__image-wrapper_1"
+          >
+            <picture class="second-section__picture">
+              <source
+                srcset="img/boy-laptop-2-sec-mobile.jpg"
+                media="(max-width: 768.98px)"
+              />
+              <img
+                class="second-section__image"
+                src="img/boy-laptop-2-sec.png"
+                alt="Boy with a laptop"
+              />
+            </picture>
+          </div>
+          <div
+            class="second-section__image-wrapper second-section__image-wrapper_2"
+          >
+            <picture class="second-section__picture">
+              <source
+                srcset="img/two-girls-2-sec-mobile.jpg"
+                media="(max-width: 768.98px)"
+              />
+              <img
+                class="second-section__image"
+                src="img/two-girls-2-sec.png"
+                alt="Two girls"
+              />
+            </picture>
+          </div>
+          <div
+            class="second-section__image-wrapper second-section__image-wrapper_3"
+          >
+            <picture class="second-section__picture">
+              <source
+                srcset="img/one-girl-2-sec-mobile.jpg"
+                media="(max-width: 768.98px)"
+              />
+              <img
+                class="second-section__image"
+                src="img/one-girl-2-sec.png"
+                alt="One girl"
+              />
+            </picture>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="third-section">
+    <!-- <section class="third-section">
       <div class="third-section__text">
         <h3 class="third-section__title title">ЩО ТАКЕ КВІЗ-ТЕСТИ</h3>
         <p class="third-section__parag third-section__parag_first">
@@ -177,9 +223,9 @@
             </div>
           </div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="fourth-section">
       <div class="fourth-section__text">
@@ -237,17 +283,32 @@
 
     <section class="fifth-section">
       <h3 class="fifth-section__title title">ЗВ'ЯЖІТЬСЯ З НАМИ</h3>
+      <div
+        class="fifth-section__form-subtitle fifth-section__form-subtitle_mobile"
+      >
+        Залишіть свій номер <br />
+        телефону і ми обов'язково <br />
+        вам передзвонимо!
+      </div>
       <div class="fifth-section__content-wrapper">
         <div class="fifth-section__image-wrapper">
-          <img
+          <picture class="fifth-section__picture">
+            <source
+              srcset="img/phone-time-money-5-sec-bg-mobile.png"
+              media="(max-width: 768.98px)"
+            />
+            <img
             class="fifth-section__image"
             src="img/phone-time-money-5-sec-bg.png"
             alt="Phone, time, money"
           />
+          </picture>
         </div>
         <div class="fifth-section__form-wrapper">
           <div class="fifth-section__form-subtitle">
-            Залишіть свій номер телефону і ми обов'язково вам передзвонимо!
+            Залишіть свій номер <br />
+            телефону і ми обов'язково <br />
+            вам передзвонимо!
           </div>
           <form action="#" method="post" class="fifth-section__form">
             <input

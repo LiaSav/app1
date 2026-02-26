@@ -4,6 +4,15 @@
     url('../img/phone-question.png') left bottom no-repeat,
     url('../img/ellipse-2-sec.png') right bottom no-repeat;
 
+  @media (max-width: 1024.98px) {
+    padding: 100px 50px;
+    background: url('../img/ellipse-2-sec-bg-mobile.png') left top no-repeat;
+  }
+
+  @media (max-width: 768.98px) {
+    padding: 16px 20px 38px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -12,49 +21,132 @@
     @media (max-width: 1720.98px) {
       justify-content: center;
     }
+
+    @media (max-width: 1320.98px) {
+      gap: 25px;
+    }
+
+    @media (max-width: 768.98px) {
+      flex-direction: column-reverse;
+      gap: 22px;
+    }
   }
 
-  &__text {
+  &__text-wrapper {
     max-width: 430px;
 
     @media (max-width: 1720.98px) {
       flex: 0 1 50%;
     }
+
+    @media (max-width: 768.98px) {
+      max-width: 100%;
+      flex: 0 1 100%;
+    }
+  }
+
+  &__title-mobile {
+    display: none;
+
+    @media (max-width: 768.98px) {
+      display: inline-block;
+      margin-bottom: 38px;
+    }
+
+    &:before,
+    &:after {
+      @media (max-width: 768.98px) {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
   }
 
   &__title {
     margin-bottom: 46px;
+
+    @media (max-width: 768.98px) {
+      display: none;
+    }
   }
 
   &__parag {
     font-size: 18px;
+    line-height: 28px;
+
+    @media (max-width: 768.98px) {
+      font-size: 15px;
+      line-height: 22px;
+    }
 
     &_first {
       margin-bottom: 25px;
+
+      @media (max-width: 768.98px) {
+        margin-bottom: 15px;
+      }
     }
 
     &_second {
       margin-bottom: 53px;
+
+      @media (max-width: 768.98px) {
+        margin-bottom: 15px;
+      }
     }
 
     &_bold {
       margin-bottom: 53px;
       font-weight: 700;
       color: $black-text;
+
+      @media (max-width: 768.98px) {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__images {
-    max-height: 705px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 'photo1 photo2' 'photo1 photo3';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
     gap: 20px;
-    border-radius: 50px;
 
     @media (max-width: 1720.98px) {
       flex: 0 1 50%;
+    }
+
+    @media (max-width: 768.98px) {
+      gap: 5px;
+    }
+  }
+
+  &__image-wrapper {
+    &_1 {
+      grid-area: photo1;
+
+      @media (max-width: 768.98px) {
+        max-width: 160px;
+        height: 186px;
+      }
+    }
+    &_2 {
+      grid-area: photo2;
+
+      @media (max-width: 768.98px) {
+        max-width: 155px;
+        height: 91px;
+      }
+    }
+    &_3 {
+      grid-area: photo3;
+
+      @media (max-width: 768.98px) {
+        max-width: 155px;
+        height: 91px;
+      }
     }
   }
 }

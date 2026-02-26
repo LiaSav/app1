@@ -23,11 +23,27 @@ h1,
 h2 {
   font-size: 46px;
   font-weight: 800;
+
+  @media (max-width: 1024.98px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 768.98px) {
+    font-size: 20px;
+  }
 }
 
 h3 {
   font-size: 36px;
   font-weight: 700;
+
+  @media (max-width: 1024.98px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 768.98px) {
+    font-size: 20px;
+  }
 }
 
 h4 {
@@ -72,12 +88,22 @@ p {
     height: 41px;
     background-color: #ffcede;
     border-radius: 40px;
+
+    @media (max-width: 768.98px) {
+      top: 12px;
+      width: 215px;
+      height: 21px;
+    }
   }
 
   &:after {
     bottom: -22px;
     width: 239px;
     border-bottom: 4px dashed $black-bg;
+
+    @media (max-width: 768.98px) {
+      width: 182px;
+    }
   }
 }
 
@@ -100,8 +126,20 @@ p {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 
-  &:hover {
-    box-shadow: 5px 20px 40px rgba(171, 4, 54, 0.7);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: 5px 20px 40px rgba(171, 4, 54, 0.7);
+    }
+  }
+
+  @media (hover: none) {
+    box-shadow: inherit;
+  }
+
+  @media (max-width: 768.98px) {
+    width: 290px;
+    padding: 15px;
+    font-size: 16px;
   }
 }
 

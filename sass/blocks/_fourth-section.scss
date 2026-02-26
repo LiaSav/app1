@@ -7,22 +7,55 @@
     url('../img/big-rocket-4-sec-bg.png') right top 73px no-repeat,
     url('../img/ellipse-4-sec-bg.png') left bottom no-repeat;
 
+  @media (max-width: 1024.98px) {
+    padding: 100px 50px;
+  }
+
+  @media (max-width: 768.98px) {
+    padding: 16px 20px 110px;
+    background: none;
+  }
+
   &__text {
     max-width: 880px;
     margin-bottom: 116px;
     text-align: center;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 61px;
+
+    @media (max-width: 768.98px) {
+      max-width: 80%;
+      margin-bottom: 5px;
+    }
+
+    &::after {
+      @media (max-width: 768.98px) {
+        bottom: -5px;
+      }
+    }
   }
 
   &__parag {
     font-size: 20px;
     line-height: 28px;
 
+    @media (max-width: 768.98px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
     &_first {
       margin-bottom: 25px;
+
+      @media (max-width: 768.98px) {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -31,6 +64,11 @@
     gap: 20px;
     justify-content: center;
     margin-bottom: 37px;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 24px;
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -43,6 +81,14 @@
     background-color: $white-bg;
     border-radius: 20px;
     border: 1px solid #dfdfdf;
+
+    @media (max-width: 992.98px) {
+      padding: 47px 10px 45px;
+    }
+
+    @media (max-width: 768.98px) {
+      max-width: 320px;
+    }
   }
 
   &__image-wrapper {
@@ -73,5 +119,9 @@
       width: 200px;
       border-bottom: 4px dashed #ed769c;
     }
+  }
+
+  &__button {
+    width: 320px;
   }
 }
