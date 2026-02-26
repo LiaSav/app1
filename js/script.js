@@ -1,21 +1,49 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+const swiper = new Swiper('.third-section__slider', {
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoHeight: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      autoHeight: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    // 1024: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    //   autoHeight: false,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    // },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      autoHeight: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1920: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      autoHeight: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
   },
 });

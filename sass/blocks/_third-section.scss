@@ -1,55 +1,96 @@
 .third-section {
-  padding: 124px 50px 190px;
+  padding: 124px 150px 190px;
   background: url('../img/business-icon-3-sec-bg.png') right top 99px no-repeat;
 
-  &__text {
+  @media (max-width: 1024.98px) {
+    padding: 100px 50px;
+    background: none;
+  }
+
+  @media (max-width: 768.98px) {
+    padding: 20px 20px 130px;
+  }
+
+  &__text-wrapper {
     max-width: 880px;
     margin: 0 auto 50px;
     text-align: center;
+
+    @media (max-width: 1024.98px) {
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
   }
 
   &__title {
     margin-bottom: 77px;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 37px;
+    }
   }
 
   &__parag {
     font-size: 20px;
     line-height: 28px;
 
+    @media (max-width: 768.98px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
     &_first {
       margin-bottom: 25px;
+
+      @media (max-width: 768.98px) {
+        margin-bottom: 15px;
+      }
     }
 
     &_fz16 {
       font-size: 16px;
       line-height: 24px;
+
+      @media (max-width: 768.98px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
 
   &__slider {
-    min-height: 490px;
-  }
-
-  &__slider-wrapper {
-    justify-content: center;
-    align-items: stretch !important;
-    gap: 20px;
+    width: 100%;
+    height: 100%;
   }
 
   &__slide {
-    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-self: stretch;
     padding: 25px;
     border-radius: 20px;
     border: 1px solid #dfdede;
     background-color: $white-bg;
+
+    @media (max-width: 768.98px) {
+      padding: 19px 19px 75px;
+    }
   }
 
   &__image-wrapper {
     margin-bottom: 29px;
     width: 100%;
-    max-height: 220px;
     border-radius: 10px;
     overflow: hidden;
+
+    @media (max-width: 768.98px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__image {
+    width: 100%;
   }
 
   &__subtitle {
@@ -58,6 +99,10 @@
     margin-bottom: 25px;
     color: $black-title;
 
+    @media (max-width: 768.98px) {
+      font-size: 14px;
+    }
+
     &:after {
       content: '';
       width: 170px;
@@ -65,6 +110,24 @@
       bottom: -14px;
       left: 0;
       border-bottom: 4px dashed #ed769c;
+    }
+  }
+
+  &__slider-pagination {
+    bottom: 5px !important;
+
+    @media (max-width: 768.98px) {
+      bottom: 22px !important;
+    }
+
+    & span {
+      margin: 0 7px !important;
+      background: #D9D9D9;
+      opacity: 1 !important;
+    }
+
+    & span[aria-current='true'] {
+      background: #ED769C;
     }
   }
 }
