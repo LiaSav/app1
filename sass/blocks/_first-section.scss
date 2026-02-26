@@ -72,6 +72,7 @@
     position: absolute;
     left: -14px;
     top: -29px;
+    animation: levitate-animation 3s linear infinite alternate;
 
     @media (max-width: 768.98px) {
       left: -5px;
@@ -129,5 +130,14 @@
       max-width: 100%;
       flex: 0 1 100%;
     }
+  }
+}
+
+@keyframes levitate-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(5px, -5px);
   }
 }

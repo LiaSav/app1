@@ -21,6 +21,27 @@
   </head>
 
   <body class="body">
+    <div class="overlay">
+      <div class="modal">
+        <h5 class="modal__title">Title</h5>
+        <p class="modal__parag modal__parag_mb10">
+          Lorem ipsum dolor sit amet consectetur. Mauris varius tempus platea
+          rhoncus amet cursus donec. At commodo tristique risus sapien aliquam
+          commodo eu in. Lacus lorem dolor ac a fusce scelerisque eget egestas
+          lorem. Diam gravida interdum habitant sit.
+        </p>
+        <p class="modal__parag">
+          Lorem ipsum dolor sit amet consectetur. Mauris varius tempus platea
+          rhoncus amet cursus donec. At commodo tristique risus sapien aliquam
+          commodo eu in. Lacus lorem dolor ac a fusce scelerisque eget egestas
+          lorem. Diam gravida interdum habitant sit.
+        </p>
+        <div class="modal__close">
+          <span class="modal__close-line"></span>
+          <span class="modal__close-line"></span>
+        </div>
+      </div>
+    </div>
     <section class="first-section">
       <div class="first-section__container container">
         <div class="first-section__text-wrapper">
@@ -45,9 +66,9 @@
             Почніть використовувати квізи на сайті та в соціальних мережах та
             отримайте додатковий дохід
           </p>
-          <a href="#" class="first-section__button button"
-            >Дізнатись детальніше</a
-          >
+          <button class="first-section__button button button-modal">
+            Дізнатись детальніше
+          </button>
         </div>
         <div class="first-section__image-wrapper">
           <picture class="first-section__picture">
@@ -62,9 +83,9 @@
             />
           </picture>
         </div>
-        <a href="#" class="first-section__button-mobile button"
-          >Дізнатись детальніше</a
-        >
+        <button class="first-section__button-mobile button button-modal">
+          Дізнатись детальніше
+        </button>
       </div>
     </section>
 
@@ -278,7 +299,9 @@
           </h4>
         </div>
       </div>
-      <a href="#" class="fourth-section__button button">Дізнатись детальніше</a>
+      <button class="fourth-section__button button button-modal">
+        Дізнатись детальніше
+      </button>
     </section>
 
     <section class="fifth-section">
@@ -327,6 +350,7 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

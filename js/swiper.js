@@ -1,49 +1,46 @@
 const swiper = new Swiper('.third-section__slider', {
   breakpoints: {
-    576: {
+    0: {
       slidesPerView: 1,
       spaceBetween: 0,
-      autoHeight: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        enabled: true,
       },
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
-      autoHeight: false,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        enabled: false,
       },
     },
-    // 1024: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 20,
-    //   autoHeight: false,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    // },
     1400: {
       slidesPerView: 3,
       spaceBetween: 20,
-      autoHeight: false,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        enabled: false,
       },
     },
     1920: {
       slidesPerView: 4,
       spaceBetween: 20,
-      autoHeight: false,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        enabled: false,
       },
     },
   },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  autoHeight: false,
+  loop: true,
+  grabCursor: true,
 });
